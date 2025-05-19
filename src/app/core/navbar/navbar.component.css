@@ -1,0 +1,47 @@
+.navbar {
+    background-image: url('/navbar-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+}    
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    color: white;
+}
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}    
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 33px;
+}    
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}    
+.nav-links :hover {
+    font-weight: bold; 
+    color: antiquewhite;
+    transform: translateX(4px); 
+}
+.redes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 8px;
+    margin-right: 50px;
+}
+.redes :hover {
+    transform: translateX(4px); 
+}
+.logo {
+    width: 250px;
+    margin-left: 50px;
+}

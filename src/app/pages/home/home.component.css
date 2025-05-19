@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    gap: 120px;
+    padding: 100px 0 100px 0;
+}
+.tecnica {
+    background-color: #F5F0ED;
+}
+.imagenes {
+    width: 650px;
+}
+.descrpcion {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.nombre{
+    font-size: 42px;
+    font-family:  "Dancing Script", cursive;
+    transition: all 0.2s ease
+}
+.nombre:hover {
+    font-weight: bold; 
+    transform: translateX(5px); 
+}
+
+
+/* tarjetas */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center;
+    padding: 30px 50px 50px 90px;
+}
+.card {
+    flex: 1 1 calc(50% - 1rem);
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+    transition: transform 0.3s ease;
+}
+.card img {
+    object-fit: cover;
+}
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(240, 229, 213, 0.9);
+    color: black;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card:hover .card-description {
+    transform: translateY(0);
+}
+.tecnicas{
+    background-color: #E3E3E5;
+}
+.catalogo{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    padding: 50px 0 0px 50px;
+    transition: all 0.2s ease
+}
+.catalogo:hover {
+    font-weight: bold; 
+    transform: translateX(5px); 
+}
+
+
+/* botones */
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+button:hover {
+    font-weight: bold; 
+    transform: translateX(5px); 
+}
+
