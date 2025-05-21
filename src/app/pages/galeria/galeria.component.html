@@ -1,0 +1,16 @@
+<div class="galeria">
+  <img 
+    [src]="imagenSeleccionada" 
+    class="imagen-principal"
+    [class.mostrar]="imagenSeleccionada"
+  />
+
+  <div class="miniaturas">
+    <img 
+      *ngFor="let img of imagenes" 
+      [src]="img"
+      (click)="cambiarImagen(img)"
+      [class.seleccionada]="img === imagenSeleccionada"
+    />
+  </div>
+</div>

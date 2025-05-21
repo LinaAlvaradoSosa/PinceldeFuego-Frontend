@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    gap: 120px;
+    gap: 5%;
     padding: 100px 0 100px 0;
 }
 .tecnica {
@@ -8,6 +8,7 @@
 }
 .imagenes {
     width: 650px;
+    border-radius: 8px;
 }
 .descrpcion {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -49,7 +50,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(240, 229, 213, 0.9);
+    background: rgba(245, 240, 237, 0.7);
     color: black;
     padding: 30px;
     transform: translateY(100%);
@@ -69,7 +70,7 @@
 .catalogo{
     font-family: "Dancing Script", cursive;
     font-size: 40px;
-    padding: 50px 0 0px 50px;
+    padding: 50px 0 0px 90px;
     transition: all 0.2s ease
 }
 .catalogo:hover {

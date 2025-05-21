@@ -1,7 +1,7 @@
 .footer {
     background-image: url('/navbar-bg.png');
     color: #fff;
-    padding: 3rem 2rem;
+    padding: 20px 10px;
     box-shadow: 4px -2px 4px rgba(148, 69, 11, 0.9);
 
 }
@@ -17,7 +17,7 @@
 }
 .copyright {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Dancing Script", cursive;
 }
 .redes {
@@ -29,32 +29,45 @@
 h4 {
     margin-top: 180px;
     font-family: "Dancing Script", cursive;
+    font-size: 28px;
 }
 h5 {
     margin-top: 60px;
     margin-bottom: 20px;
     font-family: "Dancing Script", cursive;
-    font-size: 1.5rem;
+    font-size: 28px;
 }
 .containerRedes{
     width: 400px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;     
 }
-.redes :hover {
-    transform: translateX(4px); 
+.formulario {
+    margin-top: 10px;
 }
 .logo {
-    margin: 180px 0 0 20px;
-    width: 400px;
-
+    margin-top: 24% ;
+    margin-left: 30%;
+    /* : 260px 0 0 20px; */
+    width: 320px; 
 }
 
 /* form */
 
+.contacto {
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    margin: 2%;
+}
+
 .contact-form {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    background: #AE9C8F;
-    padding: 10px 10px;
+    background: rgba(97, 77, 66, 0.5);
+    color: black;
+    padding: 6px 6px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,23 +76,19 @@ h5 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #5a3e2b;
 }
-.contact-form label {
-    display: block;
-    margin: 12px 0 5px;
-    font-weight: bold;
-}
 .contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 8px;
+    margin: 3px;
     border-radius: 6px;
     border: 1px solid #ccc;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .contact-form button {
-    margin-top: 20px;
+    margin-top: 3px;
     padding: 10px 20px;
-    background-color: #8b4513;
+    background-color: #2D1A14;
     color: white;
     border: none;
     border-radius: 6px;
@@ -87,5 +96,28 @@ h5 {
     transition: background-color 0.3s;
 }
 .contact-form button:hover {
-    background-color: #a0522d;
+    background-color:#643A21;
+}
+.infoFooter{
+    display: flex;
+    gap: 25%;
+    margin: 2% 0 2% 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+
+}
+.titulos{
+    font-size: 25px;
+    font-family: "Dancing Script", cursive;
+}
+.iconos {
+    display: flex;
+    gap: 22px;
+}
+.navLink {
+    width: 33px;
+    height: 33px;
+}
+.iconos :hover {
+    transform: translateX(4px); 
 }
