@@ -1,0 +1,56 @@
+.contact-form {
+    margin: 5% 0 7% 25%;
+    max-width: 800px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 6px 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.respuesta{
+    font-size: 25px;
+    font-family:  "Dancing Script", cursive;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5a3e2b;
+}
+.contact-form input, .contact-form textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-form button {
+    margin-top: 3px;
+    padding: 10px 20px;
+    background-color: #2D1A14;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color:#643A21;
+}
+.contenedor{
+    margin: 7% 0 0 7%;
+}
+.contactame{
+    font-size: 42px;
+    font-family:  "Dancing Script", cursive;
+    transition: all 0.2s ease
+}
+.contactame:hover {
+    font-weight: bold; 
+    transform: translateX(5px); 
+}
+.info{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}

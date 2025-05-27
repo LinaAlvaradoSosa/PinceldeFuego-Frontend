@@ -101,10 +101,9 @@ h5 {
 .infoFooter{
     display: flex;
     gap: 25%;
-    margin: 2% 0 2% 10%;
+    margin: 2% 8% 2% 8%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-
 }
 .titulos{
     font-size: 25px;
@@ -113,6 +112,7 @@ h5 {
 .iconos {
     display: flex;
     gap: 22px;
+    margin-bottom: 4%;
 }
 .navLink {
     width: 33px;
@@ -120,4 +120,23 @@ h5 {
 }
 .iconos :hover {
     transform: translateX(4px); 
+}
+@media screen and (max-width: 1000px){
+    .logo {
+        display: none;
+    }
+    .contact-form{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 679px){
+    .infoFooter {
+        display: flex;
+        flex-direction: column; 
+    }
+    .contact-form{
+        max-width: 600px;
+
+    }
+    
 }

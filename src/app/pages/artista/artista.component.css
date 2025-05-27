@@ -1,0 +1,56 @@
+.video-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.info-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.nombre {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.nombre:hover {
+    font-weight: bold;
+    transform: translateX(5px);
+}
+.descripcion {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+@media (max-width: 768px) {
+    .nombre {
+        font-size: 1.4rem;
+    }
+    .descripcion {
+        font-size: 0.95rem;
+    }
+    .info-container {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+}
