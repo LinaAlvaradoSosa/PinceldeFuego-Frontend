@@ -1,0 +1,67 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    text-align: center;
+    margin: 100px;
+}
+table {
+    width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+thead {
+    background-color: #3F3128;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+th {
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+}
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+td {
+    padding: 12px;
+    color: black;
+}
+.volverTrucu{
+    margin: 20px
+}
+.volverTrucu:hover {
+    transform: scale(1.05);
+}
+.btn-borrar {
+    background-color: #9E3329;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+}
+.btn-borrar:hover {
+    background-color: #BF1C17;
+    transform: scale(1.05);
+}
+button {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}

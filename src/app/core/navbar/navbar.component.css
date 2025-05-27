@@ -57,7 +57,7 @@
     border: none;
     cursor: pointer;
 }
-  /* Estilos responsive */
+
 @media (max-width: 1057px) {
     .logo {
         display: none;

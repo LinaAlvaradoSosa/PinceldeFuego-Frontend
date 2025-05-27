@@ -1,0 +1,14 @@
+<div class="formulario-container">
+    <div class="titulo">Cuenta Administrativa Pincel de Fuego</div>
+    <form [formGroup]="Formlogin">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input formControlName="contrasena" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="login()">Enviar</button>
+    </form>
+</div>

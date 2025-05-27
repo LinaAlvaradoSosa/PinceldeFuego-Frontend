@@ -1,0 +1,30 @@
+<div class="contenedor">     
+    <table>
+        <thead>
+            <tr>
+                <th class="text-center align-middle">Nombre Completo</th>
+                <th class="text-center align-middle">Correo</th>
+                <th class="text-center align-middle">Celular</th>
+                <th class="text-center align-middle">Producto</th>
+                <th class="text-center align-middle">Mensaje</th>
+                <th class="text-center align-middle">Respondido</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mensaje of mensajes">
+                <td>{{mensaje.nombre}}</td>
+                <td>{{mensaje.correo}}</td>
+                <td>{{mensaje.celular}}</td>
+                <td>{{mensaje.tipo}}</td>
+                <td>{{mensaje.mensaje}}</td>
+                <td>
+                    <button  (click)="deleteMessage(mensaje._id)" class="btn-borrar">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<button routerLink="/principalAdmi" class="volverTrucu" style="padding: 10px 20px; background-color: #947B66; color: white; border: none; border-radius: 5px;">
+    ← Admi.PinceldeFuego
+</button>

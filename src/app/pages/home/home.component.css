@@ -185,17 +185,11 @@
         padding: 30px 0 0px 120px;
     }
 }
-
-
 @media (max-width: 1050px) {
     .card-description{
         padding: 20px;
     }
 }
-
-
-
-
 @media (max-width: 937px) {
     .catalogo{
         padding: 30px 0 0px 100px;

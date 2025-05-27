@@ -1,0 +1,42 @@
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    font-size: 34px;
+    font-family: "Dancing Script", cursive;
+    transition: all 0.2s ease;
+}
+
+.titulo:hover {
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+.tabla {
+    background-color: #3F3128;
+    color:aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: none;
+}
+
+.btn {
+    border-color: #B09983;
+    background-color: #B09983;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.btn:hover {
+    background-color: #5B4330;
+    transform: translateX(5px);
+}
+.table {
+    margin: 6%;
+}
+td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
