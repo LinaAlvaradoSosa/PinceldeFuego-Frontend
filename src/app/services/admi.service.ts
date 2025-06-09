@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Producto } from '../interfaces/producto.interface';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -30,4 +32,7 @@ export class AdmiService {
   deleteMessage(id: string) {
     return this.http.delete(`${this.apiURL}/borrarMensaje/${id}`)
   }
+
+ 
+  
 }

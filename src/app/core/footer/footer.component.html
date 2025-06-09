@@ -2,14 +2,14 @@
     <div class="footer-content">
         <img class="logo" src="/LOGO.png"/>
         <div class="formulario">
-            <form class="contact-form" >
+            <form [formGroup]="formularioContacto" class="contact-form" >
                 <p class="contacto">CONTACTAME</p>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre:" />
-                <input type="email" id="correo" name="correo" placeholder="Correo:" />
-                <input type="tel" id="telefono" name="telefono" placeholder="Celular:" />
-                <input type="text" id="producto" name="producto" placeholder="Producto: Ej. Retrato de persona"/>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje:"  ></textarea>
-                <button type="submit">Enviar</button>
+                <input formControlName="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre:" />
+                <input formControlName="correo" type="email" id="correo" name="correo" placeholder="Correo:" />
+                <input formControlName="celular" type="tel" id="telefono" name="telefono" placeholder="Celular:" />
+                <input formControlName="tipo" type="text" id="producto" name="producto" placeholder="Producto: Ej. Retrato de persona"/>
+                <textarea formControlName="mensaje" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje:"  ></textarea>
+                <button (click)="sendMessage()" type="submit">Enviar</button>
             </form>
         </div>
     </div>

@@ -34,8 +34,8 @@ deleteMessage(id: string) {
       text: "No podras revertir esta accion despues",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#6ECCBA",
-      cancelButtonColor: "#F69D97",
+      confirmButtonColor: "#85B185",
+      cancelButtonColor: "#B4120C",
       confirmButtonText: "Si!, quiero borrarlo"
     }).then((result) => {
       if (result.isConfirmed) {
