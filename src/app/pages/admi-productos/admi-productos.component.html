@@ -19,15 +19,12 @@
                 </td>
                 <td>{{producto.tipo}}</td>
                 <td>
-                    <button type="button" class="btn btn-primary btn-actualizar" data-bs-toggle="modal">
-                        Actualizar
-                    </button>
                     <button (click)="deleteProduct(producto._id)" class="btn-borrar" type="button">Borrar</button>
                 </td>
             </tr>
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary agregarProducto" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-hidden="false">Agregar un producto</button>
+    <button type="button" class="btn btn-primary agregarProducto" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar un producto</button>
 </div>
 
 <button routerLink="/principalAdmi"  class="volverTrucu" style="padding: 10px 20px; background-color: #919191; color: black; border: none; border-radius: 5px;">
@@ -37,19 +34,20 @@
 
 <!-- moda agregar -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="false">
+<div class="modal fade" id="exampleModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel" aria-hidden="false">Agregar un producto</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar un producto</h1>
             </div>
             <div class="modal-body">
-                <form (ngSubmit)="crear()" enctype="multipart/form-data">
-                    <input type="text" [(ngModel)]="producto.nombre" name="nombre" placeholder="Nombre" required />
-                    <input type="text" [(ngModel)]="producto.descripcion" name="descripcion" placeholder="Descripción" required />
-                    <input type="text" [(ngModel)]="producto.tipo" name="tipo" placeholder="Tipo" required />
-                    <input type="file" (change)="onFileChange($event)" />
-                    <button type="submit">Crear producto</button>
+                <form (ngSubmit)="crear()" enctype="multipart/form-data"  aria-hidden="false">
+                    <input  #myInput type="text" [(ngModel)]="producto.nombre" name="nombre" placeholder="Nombre" required />
+                    <input  #myInput  type="text" [(ngModel)]="producto.descripcion" name="descripcion" placeholder="Descripción" required />
+                    <input  #myInput type="text" [(ngModel)]="producto.tipo" name="tipo" placeholder="tipos" required />
+                    <p class="tipo">EJ: retratos, paisajes, animales, textos-biblicos-románticos, avisos, notas-de-estilo, objetos-decorativos-utilitarios, llaveros-imagenes, trofeos-recordatorios, varios</p>
+                    <input  #myInput type="file" (change)="onFileChange($event)" />
+                    <button type="submit"  data-bs-dismiss="modal" >Crear producto</button>
                 </form>
             </div>
         </div>

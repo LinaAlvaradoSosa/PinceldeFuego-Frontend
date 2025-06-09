@@ -1,0 +1,8 @@
+<h2>Galería</h2>
+
+<div class="galeria">
+    <div class="imagen" *ngFor="let producto of productos">
+        <img [src]="producto.imagen" [alt]="producto.nombre" />
+    </div>
+</div>
+

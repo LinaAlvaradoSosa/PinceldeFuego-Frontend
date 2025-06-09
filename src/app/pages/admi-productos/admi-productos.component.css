@@ -159,4 +159,7 @@ button:hover {
 .volverTrucu:hover {
     transform: scale(1.05);
 }
-
+.tipo{
+    font-size: 12px;
+    color: gray;
+}

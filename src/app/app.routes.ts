@@ -8,6 +8,8 @@ import { PrincipalAdmiComponent } from './pages/principal-admi/principal-admi.co
 import { AdmiMensajesComponent } from './pages/admi-mensajes/admi-mensajes.component';
 import { AuthGuard } from './auth.guard';
 import { AdmiProductosComponent } from './pages/admi-productos/admi-productos.component';
+import { GaleriaTiposComponent } from './pages/galeria-tipos/galeria-tipos.component';
+
 
 export const routes: Routes = [
     {path: "" , component: HomeComponent },
@@ -17,5 +19,9 @@ export const routes: Routes = [
     {path: "login", component: LoginComponent},
     {path: "principalAdmi", component: PrincipalAdmiComponent, canActivate: [AuthGuard]},
     {path: "productos", component: AdmiProductosComponent, canActivate: [AuthGuard]},
-    {path:"mensajes", component: AdmiMensajesComponent, canActivate: [AuthGuard]}
+    {path: "mensajes", component: AdmiMensajesComponent, canActivate: [AuthGuard]},
+    {path: 'galeria-tipos/:tipo',
+        loadComponent: () =>
+        import('./pages/galeria-tipos/galeria-tipos.component').then(m => m.GaleriaTiposComponent)
+    }
 ];

@@ -31,5 +31,10 @@ export class ProductosService {
   actualizarProducto(id: string, formData: FormData) {
     return this.http.put(`${this.apiURL}/productos/actualizar/${id}`, formData);
   }
+
+  getProductosPorTipo(tipo: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiURL}/productos/obtenerProductosPorTipo/${tipo}`);
+  }
+  
   
 }

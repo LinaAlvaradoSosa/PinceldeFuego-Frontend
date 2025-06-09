@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './admi-productos.component.html',
   styleUrl: './admi-productos.component.css'
 })
-export class AdmiProductosComponent {
+export class AdmiProductosComponent  {
 
   productos: Producto[] = [];
 
@@ -24,11 +24,11 @@ export class AdmiProductosComponent {
       this.productos = res;
     });
   }
-    
+
   obtenerRutaImagen(nombreArchivo: string): string {
     return `http://localhost:4000/uploads/${nombreArchivo}`;
   }
-    
+
   deleteProduct(id: string) {
     Swal.fire({
         title: "¿Estas seguro que quieres eliminar este producto?",
@@ -56,7 +56,6 @@ export class AdmiProductosComponent {
         });
   }
 
-
   producto = {
     nombre: '',
     descripcion: '',
@@ -70,7 +69,6 @@ export class AdmiProductosComponent {
   }
 
   crear() {
-    // Validación rápida antes de enviar
     if (!this.producto.nombre || !this.producto.descripcion || !this.producto.tipo) {
       Swal.fire({
         icon: 'warning',
@@ -96,8 +94,6 @@ export class AdmiProductosComponent {
           title: '¡Producto creado!',
           text: 'El producto se ha guardado exitosamente.'
         });
-  
-        // Limpia el formulario si quieres
         this.producto = { nombre: '', descripcion: '', tipo: '' };
         this.archivo = null;
       },
@@ -111,5 +107,5 @@ export class AdmiProductosComponent {
       }
     });
   }
-  
+
 }

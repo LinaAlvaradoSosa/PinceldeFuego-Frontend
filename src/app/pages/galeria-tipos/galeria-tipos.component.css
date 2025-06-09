@@ -1,0 +1,36 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    padding: 50px 0 0px 90px;
+    transition: all 0.2s ease
+
+}
+h2:hover {
+    font-weight: bold; 
+    transform: translateX(5px); 
+}
+
+.imagen {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+    h2{
+        padding: 50px 0 0px 30px;
+    }
+}
