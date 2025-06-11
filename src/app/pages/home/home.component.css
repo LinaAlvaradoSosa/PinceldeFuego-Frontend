@@ -80,16 +80,42 @@
 }
 /* botones */
 
-.veta {
-    background: none;
+/* .veta {
+    background-image: url('/navbar-bg.png');
     border: none;
     padding: 0;
     cursor: pointer;
     transition: all 0.2s ease;
     width: 180px;
     height:c50px
-    
+     */
+
+
+.veta {
+    background-color:#2D1A14; 
+    color: #fff8f0;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    background-image: linear-gradient(145deg, #a97449 0%, #8d5e32 100%);
+    letter-spacing: 1px;
 }
+
+.veta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.veta:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
 .veta:hover {
     font-weight: bold; 
     transform: translateX(5px); 

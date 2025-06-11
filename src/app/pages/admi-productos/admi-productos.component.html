@@ -15,7 +15,7 @@
             <tr *ngFor="let producto of productos">
                 <td>{{producto.nombre}}</td>
                 <td>
-                    <img class="imagen" width="80"  [src]="producto.imagen" alt="{{producto.nombre}}"/>
+                    <img class="imagen" width="80"  [src]="obtenerUrlCloudinary(producto.imagen)" alt="{{producto.nombre}}"/>
                 </td>
                 <td>{{producto.tipo}}</td>
                 <td>

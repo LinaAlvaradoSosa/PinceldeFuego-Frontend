@@ -25,10 +25,6 @@ export class AdmiProductosComponent  {
     });
   }
 
-  obtenerRutaImagen(nombreArchivo: string): string {
-    return `http://localhost:4000/uploads/${nombreArchivo}`;
-  }
-
   deleteProduct(id: string) {
     Swal.fire({
         title: "¿Estas seguro que quieres eliminar este producto?",
@@ -68,6 +64,14 @@ export class AdmiProductosComponent  {
     this.archivo = event.target.files[0];
   }
 
+  obtenerUrlCloudinary(imagen: string): string {
+    if(imagen.startsWith('http')) {
+      return imagen; // ya es URL completa
+    }
+    return `https://res.cloudinary.com/tu_cuenta/image/upload/v1234567890/trazos-de-fuego/${imagen}`;
+  }
+  
+
   crear() {
     if (!this.producto.nombre || !this.producto.descripcion || !this.producto.tipo) {
       Swal.fire({
@@ -96,6 +100,7 @@ export class AdmiProductosComponent  {
         });
         this.producto = { nombre: '', descripcion: '', tipo: '' };
         this.archivo = null;
+        this.ngOnInit();
       },
       error: (err) => {
         Swal.fire({

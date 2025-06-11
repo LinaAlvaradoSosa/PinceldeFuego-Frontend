@@ -21,7 +21,7 @@ export class GaleriaComponent implements OnInit {
     this.http.get<{ imagenes: string[] }>('http://localhost:4000/api/productos/obtenerImagenes')
       .subscribe(respuesta => {
         this.imagenes = respuesta.imagenes;
-        this.imagenSeleccionada = this.imagenes[0]; // selecciona la primera imagen
+        this.imagenSeleccionada = this.imagenes[0]; 
       });
   }
 
